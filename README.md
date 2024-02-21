@@ -9,3 +9,16 @@ JavaScript, alongside HTML and CSS is one of the core technologies of the world 
 It can be used to build server side applications
 
 It is also used in mobile app development to create cross platform apps that can run on both iOS and android and also create desktop applications.
+
+## Data Types
+Primitive
+- String: Sequence of charachters that represents text.
+- Number
+- Boolean
+- Undefined
+- Null
+- Bigint
+- Symbol
+
+Non Prmitve
+- Objects

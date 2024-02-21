@@ -35,6 +35,28 @@ function add(a,b){
 console.log(add(5,3));
 
 //modern way
-let add = (a,b) =>{
+let add_new = (a,b) =>{
     return a+b;
 }
+
+//checking output sequence
+async function main(){
+    console.log("First");
+    async function secondTask(){
+        await new Promise(function(resolve, reject){
+            setTimeout(function (){
+                try{
+                    console.log("Second");
+                    resolve();
+                }
+                catch(err){
+                    reject();
+                }
+            } ,2000);   
+        })
+    }
+    await secondTask();
+}
+
+main();
+console.log("Third");

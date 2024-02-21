@@ -28,3 +28,12 @@ Non Prmitve (Collection of values)
 - Objects: Complex data type, key/property-value pairs.
 - Arrays: Collection of items in a single variable.
 - Functions: A function is a collection of code instructions that performs a specific task. 
+
+## Operators
+An operator is a special symbol used to perform operations on the value and variables
+- Assignment
+- Arithmetic
+- Comparison
+- Logical
+- String
+- Other

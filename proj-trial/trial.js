@@ -33,3 +33,8 @@ function add(a,b){
 }
 
 console.log(add(5,3));
+
+//modern way
+let add = (a,b) =>{
+    return a+b;
+}

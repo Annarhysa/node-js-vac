@@ -7,5 +7,5 @@
 TypeScript is a strongly typed programming language that builds on JavaScript, a superset of JavaScript, giving you better tooling at any scale. TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor. 
 
 ## SQL and NoSQL
-- SQL: A programming language used to manage data stored in relational databases. It allows users to interact with databases using commands that are translated into instructions for retrieving, manipulating, or
+- SQL: A programming language used to manage data stored in relational databases. It allows users to interact with databases using commands that are translated into instructions for retrieving, manipulating data. 
 - NoSQL: Databases use a variety of data models, including document-based, key-value, wide-column, and graph. They provide flexibility in data representation, allowing developers to store and retrieve data in a more dynamic and schema-less manner.

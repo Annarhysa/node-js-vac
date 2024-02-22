@@ -5,31 +5,33 @@ const port = 3000
 const {connection} = require("./db/db_config");
 
 app.get('/', (req, res) => {
-  let n1 = Number(req.query.sum1); //also can use parseFloat
-  let n2 = Number(req.query.sum2);
-  let opp = (req.query.opp);
-  switch(opp) {
-    case 'add':
-      result = n1 + n2;
-      res.send(`${n1} + ${n2} = <hr><strong>${result}</strong>`);
-      break;
-    case 'sub':
-      result = n1 - n2;
-      res.send(`${n1} - ${n2} = <hr><strong>${result}</strong>`);
-      break;
-    case 'mul':
-      result = n1 * n2;
-      res.send(`${n1} * ${n2} = <hr><strong>${result}</strong>`);
-      break;
-    case 'div':
-      result = n1 / n2;
-      res.send(`${n1} / ${n2} = <hr><strong>${result}</strong>`);
-      break;
-    default:
-      result = 'Invalid operator';
-      res.send(`<strong>${result}<\strong>`);
-  }
-});
+  let lang = req.query.lang
+  let movie = req.query.movie
+  connection.query(`SELECT * FROM movie_data WHERE title LIKE ? AND language = ? `,
+    [`${movie}%`,lang],
+      (err, results)=>{
+        if(err){
+          console.log( `Error in query!`);
+          res.send("Error in DB query");
+        }
+        else{
+          console.log(results);
+          res.send(results)};
+      })
+  });
+
+app.get('/delete', (req, res) => {
+  let id = req.query.id
+  connection.query(`DELETE FROM MOVIE_DATA WHERE ID=${id}`, (err, results)=>{
+    if(err){
+      console.log( `Error in query!`);
+      res.send("Error in DB query");
+    }
+    else{
+      console.log(results);
+      res.send(results);};
+    })
+  });
 
 app.get('/myroute', (req, res) => {
   res.send('More Hellos to you')

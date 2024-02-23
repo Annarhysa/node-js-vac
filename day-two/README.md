@@ -9,3 +9,6 @@ TypeScript is a strongly typed programming language that builds on JavaScript, a
 ## SQL and NoSQL
 - SQL: A programming language used to manage data stored in relational databases. It allows users to interact with databases using commands that are translated into instructions for retrieving, manipulating data. 
 - NoSQL: Databases use a variety of data models, including document-based, key-value, wide-column, and graph. They provide flexibility in data representation, allowing developers to store and retrieve data in a more dynamic and schema-less manner.
+
+## Graph Databases
+A graph database stores nodes and relationships instead of tables, or documents. Data is stored just like you might sketch ideas on a whiteboard. Your data is stored without restricting it to a pre-defined model, allowing a very flexible way of thinking about and using it.

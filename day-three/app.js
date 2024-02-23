@@ -1,14 +1,17 @@
 const express = require('express')
+const cors = require('cors')
+
 const app = express()
+app.use(cors())
 const port = 3000
 
 const {connection} = require("./db/db_config");
 
 app.get('/', (req, res) => {
-  let lang = req.query.lang
-  let movie = req.query.movie
-  connection.query(`SELECT * FROM movie_table WHERE title LIKE ? AND language = ? `,
-    [`${movie}%`,lang],
+  //let lang = req.query.lang
+  let movie = req.query.term
+  connection.query(`SELECT * FROM movie_table WHERE title LIKE ?`,
+    [`${movie}%`],
       (err, results)=>{
         if(err){
           console.log( `Error in query!`);

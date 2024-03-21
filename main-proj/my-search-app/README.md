@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movie Suggestion Web App
 
-## Getting Started
+This is a movie suggestion web app built using Node.js and React.js. It provides users with movie recommendations based on their preferences.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- User authentication: Users can sign up, log in, and log out securely.
+- Movie suggestions: Users receive personalized movie suggestions based on their preferences and watch history.
+- Search functionality: Users can search for movies by title, genre, or actor.
+- Ratings and reviews: Users can rate and review movies they have watched, helping others discover new films.
+- Social sharing: Users can share their favorite movies with friends on social media platforms.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend**: React.js, React Router, HTML5, CSS3, Bootstrap
+- **Backend**: Node.js, Express.js, MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **APIs**: The Movie Database (TMDb) API for fetching movie data
+- **Deployment**: Heroku for hosting the web app
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Clone this repository to your local machine:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/your-username/movie-suggestion-web-app.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate to the project directory:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   cd movie_suggestion/main-proj
 
-## Deploy on Vercel
+3. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Run app:
+
+   ```bash
+   npm run dev
+
